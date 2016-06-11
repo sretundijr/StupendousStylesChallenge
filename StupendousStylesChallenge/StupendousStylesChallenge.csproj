@@ -119,6 +119,7 @@
     <None Include="StupendousStylesChallenge_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\background.jpg" />
     <Content Include="Assets\coffee-icon.png" />
     <Content Include="Assets\color-logo.png" />
     <Content Include="Assets\donut-icon.png" />

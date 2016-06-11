@@ -8,6 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"></ColumnDefinition>
+            <ColumnDefinition Width="33*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Grid Background="Red">
+            
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/background.jpg"
+                            Stretch="UniformToFill"
+                            AlignmentX="Left"></ImageBrush>
+            </Grid.Background>
+        </Grid>
     </Grid>
 </Page>

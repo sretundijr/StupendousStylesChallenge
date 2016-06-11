@@ -25,6 +25,27 @@ namespace StupendousStylesChallenge
         public MainPage()
         {
             this.InitializeComponent();
+            mainPageFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void coffeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainPageFrame.Navigate(typeof(CoffeePage));
+        }
+
+        private void dountButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainPageFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void scheduleButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainPageFrame.Navigate(typeof(SchedulePage));
+        }
+
+        private void completeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainPageFrame.Navigate(typeof(CompletePage));
         }
     }
 }
