@@ -9,19 +9,60 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="67*"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+            <ColumnDefinition Width="47*"></ColumnDefinition>
             <ColumnDefinition Width="33*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".90*"></RowDefinition>
+            <RowDefinition Height=".75*"></RowDefinition>
+            <RowDefinition Height=".75*"></RowDefinition>
+            <RowDefinition Height="1.75*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-        <Grid Background="Red">
+        <Grid Background="Red" Grid.ColumnSpan="2" Grid.RowSpan="4">
             
         </Grid>
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="2" Grid.RowSpan="4">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/background.jpg"
                             Stretch="UniformToFill"
                             AlignmentX="Left"></ImageBrush>
             </Grid.Background>
         </Grid>
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+            <Image Source="/Assets/white-logo.png" 
+                   Height="200"
+                   Width="200"
+                   HorizontalAlignment="Left"></Image>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource mainPageTextBlock}"
+                       Text="Orginal Glazed Count: "
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="20, 0, 0, 0">
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+            <Slider Maximum="24" Minimum="0" HorizontalAlignment="Stretch"                   
+                    VerticalAlignment="Stretch" Foreground="White"
+                    Width="300"
+                    Margin="20, 0, 0, 0"></Slider>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource mainPageTextBlock}"
+                       Text="Speedway Special Count: "
+                       HorizontalAlignment="Stretch"
+                       VerticalAlignment="Center"
+                       Margin="20, 0, 0, 0">
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+            <Slider Maximum="24" Minimum="0" HorizontalAlignment="Stretch"                   
+                    VerticalAlignment="Stretch" Foreground="White"
+                    Width="300"
+                    Margin="20, 0, 0, 0"></Slider>
+        </StackPanel>
     </Grid>
 </Page>
