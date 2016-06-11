@@ -24,22 +24,33 @@
                 Content="Donuts"></Button>
         <Button Grid.Column="1"
                 Style="{StaticResource ButtonStyle}">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Width="Auto">
                 <Image Source="/Assets/coffe-icon.png"
+                       Stretch="None"
                        HorizontalAlignment="Left"
-                       Height="20"
-                       Width="20"></Image>
-                <TextBlock>Coffee</TextBlock>
+                       Height="10"
+                       Width="10"></Image>
+                <TextBlock Margin="5, 0, 0, 0"
+                           Style="{StaticResource mainPageTextBlock}"
+                           Text="Coffee"></TextBlock>
             </StackPanel>
         </Button>
         <Button Grid.Column="2"
                 Style="{StaticResource ButtonStyle}">
             <StackPanel Orientation="Horizontal">
-                <Image Source="/Assets/schedule-icon.png" Height="20" Width="20"/>
+                <Image Source="/Assets/schedule-icon.png" Height="10" Width="10"/>
+                
             </StackPanel>
         </Button>
         <Button Grid.Column="3"
-                Style="{StaticResource ButtonStyle}"
-                Content="Complete"></Button>
+                Style="{StaticResource ButtonStyle}">
+            <StackPanel>
+                <TextBlock Text="Complete"
+                           Style="{StaticResource mainPageTextBlock}"></TextBlock>
+            </StackPanel>
+        </Button>
+        <Frame Grid.ColumnSpan="4" Grid.Row="1" Name="mainPageFrame">
+    
+        </Frame>
     </Grid>
 </Page>
