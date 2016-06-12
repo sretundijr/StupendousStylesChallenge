@@ -7,21 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Green">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="67*"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+            <ColumnDefinition Width="47*"></ColumnDefinition>
             <ColumnDefinition Width="33*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".90*"></RowDefinition>
+            <RowDefinition Height=".75*"></RowDefinition>
+            <RowDefinition Height=".75*"></RowDefinition>
+            <RowDefinition Height="1.75*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-        <Grid Background="Green">
-
-        </Grid>
-        <Grid Grid.Column="1">
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+            <Image Source="/Assets/white-logo.png" 
+                   Height="200"
+                   Width="200"
+                   HorizontalAlignment="Left"></Image>
+        </StackPanel>
+        <Grid Grid.Column="2" Grid.RowSpan="4">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/background.jpg"
                             Stretch="UniformToFill"
                             AlignmentX="Left"></ImageBrush>
             </Grid.Background>
         </Grid>
+        
     </Grid>
 </Page>

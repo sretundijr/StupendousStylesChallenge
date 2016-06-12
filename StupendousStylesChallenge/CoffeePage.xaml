@@ -28,15 +28,15 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
-            <Button Content="Roast" Background="Black" Foreground="White">
+            <Button Content="Roast" Background="Black" Foreground="White" >
                 <Button.Flyout>
                     <Flyout x:Name="roastFlyoutButton" Placement="Bottom" >
                         <StackPanel Orientation="Vertical" Background="#FF3C1F19">
-                            <Button Content="None" Name="noneButton" 
+                            <Button Content="None" Name="noneButton" Click="noneButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
-                            <Button Content="Dark" Name="darkButton" 
+                            <Button Content="Dark" Name="darkButton" Click="darkButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
-                            <Button Content="Medium" Name="mediumButton" 
+                            <Button Content="Medium" Name="mediumButton" Click="mediumButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
                         </StackPanel>
                     </Flyout>
@@ -46,9 +46,9 @@
                 <Button.Flyout>
                     <Flyout x:Name="sweetenerFlyoutButton" Placement="Bottom">
                         <StackPanel Orientation="Vertical" Background="#FF3C1F19">
-                            <Button Content="None" Name="noSweetenerButton" 
+                            <Button Content="None" Name="noSweetenerButton" Click="noSweetenerButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
-                            <Button Content="Sugar" Name="sugarButton" 
+                            <Button Content="Sugar" Name="sugarButton" Click="sugarButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
                         </StackPanel>
                     </Flyout>
@@ -58,11 +58,11 @@
                 <Button.Flyout>
                     <Flyout x:Name="creamFlyoutButton" Placement="Bottom">
                         <StackPanel Orientation="Vertical" Background="#FF3C1F19" HorizontalAlignment="Stretch">
-                            <Button Content="None" Name="noCreamButton" 
+                            <Button Content="None" Name="noCreamButton" Click="noCreamButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
-                            <Button Content="2% milk" Name="twoPercentButton" 
+                            <Button Content="2% milk" Name="twoPercentButton" Click="twoPercentButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
-                            <Button Content="Whole Milk" Name="wholeButton" 
+                            <Button Content="Whole Milk" Name="wholeButton" Click="wholeButton_Click"
                                     Style="{StaticResource flyoutButtonStyle}"></Button>
                         </StackPanel>
                     </Flyout>

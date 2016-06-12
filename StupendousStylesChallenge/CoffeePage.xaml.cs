@@ -26,5 +26,45 @@ namespace StupendousStylesChallenge
         {
             this.InitializeComponent();
         }
+
+        private void noneButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void darkButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mediumButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void noSweetenerButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void sugarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void noCreamButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void twoPercentButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void wholeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
