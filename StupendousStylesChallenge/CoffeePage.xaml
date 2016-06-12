@@ -26,6 +26,51 @@
                    Width="200"
                    HorizontalAlignment="Left"></Image>
         </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Roast" Background="Black" Foreground="White">
+                <Button.Flyout>
+                    <Flyout x:Name="roastFlyoutButton" Placement="Bottom" >
+                        <StackPanel Orientation="Vertical" Background="#FF3C1F19">
+                            <Button Content="None" Name="noneButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                            <Button Content="Dark" Name="darkButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                            <Button Content="Medium" Name="mediumButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+            <Button Content="Sweetener" Background="Black" Foreground="White" Margin="20, 0, 0, 0">
+                <Button.Flyout>
+                    <Flyout x:Name="sweetenerFlyoutButton" Placement="Bottom">
+                        <StackPanel Orientation="Vertical" Background="#FF3C1F19">
+                            <Button Content="None" Name="noSweetenerButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                            <Button Content="Sugar" Name="sugarButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+            <Button Content="Cream" Background="Black" Foreground="White" Margin="20, 0, 0, 0">
+                <Button.Flyout>
+                    <Flyout x:Name="creamFlyoutButton" Placement="Bottom">
+                        <StackPanel Orientation="Vertical" Background="#FF3C1F19" HorizontalAlignment="Stretch">
+                            <Button Content="None" Name="noCreamButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                            <Button Content="2% milk" Name="twoPercentButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                            <Button Content="Whole Milk" Name="wholeButton" 
+                                    Style="{StaticResource flyoutButtonStyle}"></Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+        </StackPanel>
+        <TextBlock Grid.Column="0" Grid.Row="2" Foreground="White"
+                   HorizontalAlignment="Center" VerticalAlignment="Top">Coffee: </TextBlock>
         <Grid Grid.Column="3" Grid.RowSpan="4">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/background.jpg"
