@@ -71,8 +71,8 @@
         </StackPanel>
         <TextBlock Grid.Column="0" Grid.Row="2" Foreground="White"
                    HorizontalAlignment="Center" VerticalAlignment="Top">Coffee: </TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="2" Foreground="White" HorizontalAlignment="Center"
-                   VerticalAlignment="Center" Name="orderTextBlock"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2" Foreground="White" HorizontalAlignment="Left"
+                   VerticalAlignment="Top" Name="orderTextBlock"></TextBlock>
         <Grid Grid.Column="3" Grid.RowSpan="4">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/background.jpg"

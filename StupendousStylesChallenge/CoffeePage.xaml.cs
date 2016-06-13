@@ -35,19 +35,19 @@ namespace StupendousStylesChallenge
 
         private void darkButton_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text = "Dark";
+            orderTextBlock.Text = "Dark ";
             roastFlyoutButton.Hide();
         }
 
         private void mediumButton_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text = "Medium";
+            orderTextBlock.Text = "Medium ";
             roastFlyoutButton.Hide();
         }
 
         private void noSweetenerButton_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text += "No sweetener";
+            orderTextBlock.Text += " +No sweetener ";
             sweetenerFlyoutButton.Hide();
         }
 
@@ -55,7 +55,7 @@ namespace StupendousStylesChallenge
         {
             if(orderTextBlock.Text != string.Empty)
             {
-                orderTextBlock.Text += "Sugar";
+                orderTextBlock.Text += " +Sugar ";
                 sweetenerFlyoutButton.Hide();
             }
             else
@@ -66,7 +66,7 @@ namespace StupendousStylesChallenge
 
         private void noCreamButton_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text += "No cream";
+            orderTextBlock.Text += " +No cream";
             creamFlyoutButton.Hide();
         }
 
@@ -74,7 +74,7 @@ namespace StupendousStylesChallenge
         {
             if (orderTextBlock.Text != string.Empty)
             {
-                orderTextBlock.Text += "2% Milk";
+                orderTextBlock.Text += " +2% Milk";
                 creamFlyoutButton.Hide();
             }
             else
@@ -87,7 +87,7 @@ namespace StupendousStylesChallenge
         {
             if (orderTextBlock.Text != string.Empty)
             {
-                orderTextBlock.Text += "Whole Milk";
+                orderTextBlock.Text += " +Whole Milk";
                 creamFlyoutButton.Hide();
             }
             else
