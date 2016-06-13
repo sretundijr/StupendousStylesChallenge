@@ -19,7 +19,7 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
+        <!--fix these buttons-->
         <Button Style="{StaticResource ButtonStyle}" 
                 Name="dountButton"
                 Click="dountButton_Click">

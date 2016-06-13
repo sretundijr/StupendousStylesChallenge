@@ -9,14 +9,37 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="67*"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+            <ColumnDefinition Width="47*"></ColumnDefinition>
             <ColumnDefinition Width="33*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".90*"></RowDefinition>
+            <RowDefinition Height=".75*"></RowDefinition>
+            <RowDefinition Height=".75*"></RowDefinition>
+            <RowDefinition Height="1.75*"></RowDefinition>
+        </Grid.RowDefinitions>
 
-        <Grid Background="White">
-
+        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+            <Image Source="/Assets/color-logo.png"
+                   Height="200"
+                   Width="200"
+                   HorizontalAlignment="Left"></Image>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="1"
+               Grid.RowSpan="3">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/ticket.jpg" ></ImageBrush>
+            </Grid.Background>
+            
         </Grid>
-        <Grid Grid.Column="1">
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2"
+                    HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Order" FontSize="50"></TextBlock>
+            <TextBlock Text="96" FontSize="60"></TextBlock>
+        </StackPanel> 
+        <Grid Grid.Column="2" Grid.RowSpan="4">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/background.jpg"
                             Stretch="UniformToFill"

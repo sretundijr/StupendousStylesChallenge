@@ -29,42 +29,71 @@ namespace StupendousStylesChallenge
 
         private void noneButton_Click(object sender, RoutedEventArgs e)
         {
-
+            orderTextBlock.Text = string.Empty;
+            roastFlyoutButton.Hide();
         }
 
         private void darkButton_Click(object sender, RoutedEventArgs e)
         {
-
+            orderTextBlock.Text = "Dark";
+            roastFlyoutButton.Hide();
         }
 
         private void mediumButton_Click(object sender, RoutedEventArgs e)
         {
-
+            orderTextBlock.Text = "Medium";
+            roastFlyoutButton.Hide();
         }
 
         private void noSweetenerButton_Click(object sender, RoutedEventArgs e)
         {
-
+            orderTextBlock.Text += "No sweetener";
+            sweetenerFlyoutButton.Hide();
         }
 
         private void sugarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if(orderTextBlock.Text != string.Empty)
+            {
+                orderTextBlock.Text += "Sugar";
+                sweetenerFlyoutButton.Hide();
+            }
+            else
+            {
+                sweetenerFlyoutButton.Hide();
+            }
         }
 
         private void noCreamButton_Click(object sender, RoutedEventArgs e)
         {
-
+            orderTextBlock.Text += "No cream";
+            creamFlyoutButton.Hide();
         }
 
         private void twoPercentButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (orderTextBlock.Text != string.Empty)
+            {
+                orderTextBlock.Text += "2% Milk";
+                creamFlyoutButton.Hide();
+            }
+            else
+            {
+                creamFlyoutButton.Hide();
+            }
         }
 
         private void wholeButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (orderTextBlock.Text != string.Empty)
+            {
+                orderTextBlock.Text += "Whole Milk";
+                creamFlyoutButton.Hide();
+            }
+            else
+            {
+                creamFlyoutButton.Hide();
+            }
         }
     }
 }

@@ -33,6 +33,12 @@
                             AlignmentX="Left"></ImageBrush>
             </Grid.Background>
         </Grid>
-        
+
+        <TextBlock Grid.Row="1" Text="Pickup: " Foreground="White" FontSize="20"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <CalendarDatePicker PlaceholderText="Select a date:"
+                            Grid.Row="1" Grid.Column="1"></CalendarDatePicker>
+        <TimePicker ClockIdentifier="12HourClock"
+                    Grid.Row="2" Grid.Column="1"></TimePicker>
     </Grid>
 </Page>
