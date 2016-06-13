@@ -62,7 +62,6 @@
                 Name="completeButton"
                 Click="completeButton_Click">
             <StackPanel>
-                <Image></Image>
                 <TextBlock Text="Complete"
                            Style="{StaticResource mainPageTextBlock}"></TextBlock>
             </StackPanel>
