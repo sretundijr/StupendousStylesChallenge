@@ -20,7 +20,9 @@
             <RowDefinition Height="1.75*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        
+        <!--I could have added the right hand image to main page make this change to fix the slider
+        change the to two columns with the second having star sizing and elminate width from slider
+        all of my stack panels are probably not needed-->
         <Grid Grid.Column="2" Grid.RowSpan="4">
             <Grid.Background>
                 <ImageBrush ImageSource="/Assets/background.jpg"
