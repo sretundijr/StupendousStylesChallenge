@@ -22,77 +22,55 @@ namespace StupendousStylesChallenge
     /// </summary>
     public sealed partial class CoffeePage : Page
     {
+
+        private string _roast;
+        private string _cream;
+        private string _sweetener;
+
         public CoffeePage()
         {
             this.InitializeComponent();
         }
 
-        private void noneButton_Click(object sender, RoutedEventArgs e)
+        private void Cream_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text = string.Empty;
-            roastFlyoutButton.Hide();
+            var selected = (MenuFlyoutItem)sender;
+            _cream = selected.Text;
+            displayResults();
         }
 
-        private void darkButton_Click(object sender, RoutedEventArgs e)
+        private void Sweetener_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text = "Dark ";
-            roastFlyoutButton.Hide();
+            var selected = (MenuFlyoutItem)sender;
+            _sweetener = selected.Text;
+            displayResults();
         }
 
-        private void mediumButton_Click(object sender, RoutedEventArgs e)
+        private void Roast_Click(object sender, RoutedEventArgs e)
         {
-            orderTextBlock.Text = "Medium ";
-            roastFlyoutButton.Hide();
+            var selected = (MenuFlyoutItem)sender;
+            _roast = selected.Text;
+            displayResults();
         }
 
-        private void noSweetenerButton_Click(object sender, RoutedEventArgs e)
+        private void displayResults()
         {
-            orderTextBlock.Text += " +No sweetener ";
-            sweetenerFlyoutButton.Hide();
-        }
-
-        private void sugarButton_Click(object sender, RoutedEventArgs e)
-        {
-            if(orderTextBlock.Text != string.Empty)
+            if(_roast == "None" || String.IsNullOrEmpty(_roast))
             {
-                orderTextBlock.Text += " +Sugar ";
-                sweetenerFlyoutButton.Hide();
+                orderTextBlock.Text = "None";
+                return;
             }
-            else
-            {
-                sweetenerFlyoutButton.Hide();
-            }
-        }
 
-        private void noCreamButton_Click(object sender, RoutedEventArgs e)
-        {
-            orderTextBlock.Text += " +No cream";
-            creamFlyoutButton.Hide();
-        }
+            orderTextBlock.Text = _roast;
 
-        private void twoPercentButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (orderTextBlock.Text != string.Empty)
+            if(_cream != "None" && !String.IsNullOrEmpty(_cream))
             {
-                orderTextBlock.Text += " +2% Milk";
-                creamFlyoutButton.Hide();
+                orderTextBlock.Text += " + " + _cream;
             }
-            else
-            {
-                creamFlyoutButton.Hide();
-            }
-        }
 
-        private void wholeButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (orderTextBlock.Text != string.Empty)
+            if (_sweetener != "None" && !String.IsNullOrEmpty(_sweetener))
             {
-                orderTextBlock.Text += " +Whole Milk";
-                creamFlyoutButton.Hide();
-            }
-            else
-            {
-                creamFlyoutButton.Hide();
+                orderTextBlock.Text += " + " +_sweetener;
             }
         }
     }
