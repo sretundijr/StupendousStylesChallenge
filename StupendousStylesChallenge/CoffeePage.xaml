@@ -9,9 +9,8 @@
 
     <Grid Background="#FF3C1F19">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20*"></ColumnDefinition>
-            <ColumnDefinition Width="47*"></ColumnDefinition>
-            <ColumnDefinition Width="33*"></ColumnDefinition>
+            <ColumnDefinition Width=".5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height=".90*"></RowDefinition>
@@ -73,12 +72,6 @@
                    HorizontalAlignment="Center" VerticalAlignment="Top">Coffee: </TextBlock>
         <TextBlock Grid.Column="1" Grid.Row="2" Foreground="White" HorizontalAlignment="Left"
                    VerticalAlignment="Top" Name="orderTextBlock"></TextBlock>
-        <Grid Grid.Column="3" Grid.RowSpan="4">
-            <Grid.Background>
-                <ImageBrush ImageSource="/Assets/background.jpg"
-                            Stretch="UniformToFill"
-                            AlignmentX="Left"></ImageBrush>
-            </Grid.Background>
-        </Grid>
+    
     </Grid>
 </Page>

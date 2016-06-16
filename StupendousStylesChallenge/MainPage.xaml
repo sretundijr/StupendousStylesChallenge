@@ -13,13 +13,15 @@
             </RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
- 
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
             <Button Style="{StaticResource ButtonStyle}" 
                 Name="dountButton"
                 Click="dountButton_Click">
@@ -27,12 +29,12 @@
                     <Image Source="Assets/donut-icon.png"
                        Height="10"
                        Width="10"></Image>
-                <TextBlock Text="Donuts"
+                    <TextBlock Text="Donuts"
                            Style="{StaticResource mainPageTextBlock}"
                            Margin="5, 0, 0, 0"></TextBlock>
-            </StackPanel>
+                </StackPanel>
             </Button>
-        
+
             <Button Grid.Column="1"
                 Style="{StaticResource ButtonStyle}"
                 Name="coffeeButton"
@@ -69,8 +71,22 @@
                 </StackPanel>
             </Button>
 
-            <Frame Grid.ColumnSpan="4" Grid.Row="1" Name="mainPageFrame">
-    
-        </Frame>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Column="0" Name="mainPageFrame">
+
+            </Frame>
+            <Image Source="/Assets/background.jpg"
+                            Stretch="UniformToFill"
+                            Grid.Column="1"></Image>
+        </Grid>
+
+        
     </Grid>
 </Page>
